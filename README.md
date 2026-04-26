@@ -14,7 +14,7 @@ Though you may be working with shell scripts, docker and Prometheus, you don't n
 - Install docker and docker-compose on your machine and run the following commands
 
 ```sh {"id":"01HNNAFA8GKRJMD3MNWQQS7WME"}
-docker pull atvenu/assignment-webserver
+docker pull atvenu/assignment-webserver:arm or docker pull atvenu/assignment-webserver:x86   (use image based on your architecture)
 docker pull prom/prometheus:v2.45.2
 ```
 
@@ -36,11 +36,11 @@ In case you have a Windows machine, or don't want to install the software on you
 
 ## Part 1
 
-0. Run the container image `atvenu/assignment-webserver:latest` in the background and check if it is running.
+0. Run the container image `atvenu/assignment-webserver:arm` or `docker pull atvenu/assignment-webserver:x86` in the background and check if it is running.
 1. If it is failing try to find the reason, and move to the next step.
 2. Write a bash script `csv.sh` to create a file named `data.csv` whose content looks like this:
 
-```ini {"id":"01HNNAFA8GKRJMD3MNWT50392B"}
+```ini
 0, 2929
 1, 67
 2, 99
