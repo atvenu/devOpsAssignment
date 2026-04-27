@@ -23,8 +23,10 @@ docker pull prom/prometheus:v2.45.2
 - Create a new **private** repository in your GitHub account.
 - `cd` into the `solution` directory and save all your notes/fixes/files in there.
 
-In case you have a Windows machine, or don't want to install the software on your machine, you can use [https://labs.play-with-docker.com](https://labs.play-with-docker.com).
+In case you have a Windows machine, or don't want to install the software on your machine, you can use [killerCoda](https://killercoda.com/). We tested this assignment on a particular session [here](https://killercoda.com/pawelpiwosz/course/linuxFundamentals/lf-01-ls)
 
+
+Also a tribute to [Play with Docker](https://labs.play-with-docker.com) which supported running this for many years until it got deprecated on March, 01, 2026
 ### Important points to note
 
 - The assignment does not require you to modify the container image or build your own container image. Hence don't build your custom Image.
