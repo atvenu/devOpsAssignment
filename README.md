@@ -76,11 +76,11 @@ Congratulations, you fixed the Issue of the app. Add a `README.md` file inside t
 This is bonus points
 
 0. Delete any containers running from the last part.
-1. Add the Prometheus container (prom/prometheus:v2.45.2) to the docker-compose.yaml form part 2.
-2. Configure Prometheus to collect data from our application at :/metrics endpoint (which is the port from part 1).
+1. Add the Prometheus container (`prom/prometheus:v2.45.2`) to `docker-compose.yaml` from part 2.
+2. Configure Prometheus to collect data from our application at `/metrics` endpoint (which is the port from part 1).
 3. Make sure that Prometheus is accessible at http://localhost:9091 on the host. The default port of Prometheus is 9090, which you used already for your other container.
 
-To confirm metrics are being fetched from the 1st container into Prometheus. Go to the http://localhost:9090 multiple times. And then go to http://localhost:9091 and search for the `csv_requests_total` metric. You should see how many times the container one is accessed.
+To confirm metrics are being fetched from the 1st container into Prometheus. Go to http://localhost:9090 multiple times. And then go to http://localhost:9091 and search for the `csv_requests_total` metric. You should see how many times the 1st container is accessed.
 
 Save the Solution
 
